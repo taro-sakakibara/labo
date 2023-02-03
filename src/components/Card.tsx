@@ -1,21 +1,20 @@
-import style from "./card.module.scss";
+import style from './card.module.scss';
 
 export interface Props {
-  title: string;
   body: string;
-  href: string;
+  title: string;
 }
 
 export const Card: React.FC<Props> = (props) => {
   return (
     <li className={style.link_card}>
-      <a className={style.link} href={props.href}>
+      <div className={style.link}>
         <h2 className={style.heading}>
           {props.title}
           <span>&rarr;</span>
         </h2>
         <p>{props.body}</p>
-      </a>
+      </div>
     </li>
   );
 };
