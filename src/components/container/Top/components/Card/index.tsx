@@ -1,4 +1,5 @@
-import style from './card.module.scss';
+import style from './index.module.scss';
+import { Typography } from '@/components/global/Typography';
 
 export interface Props {
   body: string;
@@ -7,14 +8,14 @@ export interface Props {
 
 export const Card: React.FC<Props> = (props) => {
   return (
-    <li className={style.link_card}>
+    <div className={style.link_card}>
       <div className={style.link}>
         <h2 className={style.heading}>
           {props.title}
           <span>&rarr;</span>
         </h2>
-        <p>{props.body}</p>
+        <Typography.p>{props.body}</Typography.p>
       </div>
-    </li>
+    </div>
   );
 };

@@ -1,5 +1,9 @@
 ---
 import '@/styles/reset.css';
+import '@/styles/global.scss';
+import '@/styles/variable.scss';
+import { Header } from '@/components/global/Header';
+import { Footer } from '@/components/global/Footer';
 export interface Props {
   title: string;
 }
@@ -14,15 +18,22 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div class="wrapper">
       <div class="inner">
-        <header>header</header>
+        <Header />
         <main>
-          <slot />
+          <div class="main-wrapper">
+            <div class="conatier">
+              <slot />
+            </div>
+          </div>
         </main>
-        <footer>footer</footer>
+        <Footer />
       </div>
     </div>
   </body>
@@ -39,5 +50,14 @@ const { title } = Astro.props;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 100%;
     min-height: 100vh;
+  }
+
+  .main-wrapper {
+  }
+
+  .conatier {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 </style>

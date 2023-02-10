@@ -1,0 +1,13 @@
+@use 'sass:math';
+
+//メディアクエリの呼び出し
+$breakpoints: (
+  'spOnly': 'screen and (max-width: 767px)',
+  'pcOnly': 'screen and (min-width: 768px)',
+) !default;
+
+@mixin mediaQuery($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

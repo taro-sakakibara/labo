@@ -1,0 +1,28 @@
+:root {
+  // font-family
+  --font-primary: 'Noto Sans JP', sans-serif;
+
+  // font-size
+  --fontSize-h1: 2rem;
+  --fontSize-h2: 1.4rem;
+  --fontSize-h3: 1.2rem;
+  --fontSize-h4: 1.1rem;
+  --fontSize-h5: 1rem;
+  --fontSize-h6: 1rem;
+  --fontSize-body: 0.92rem;
+
+  // color-palette
+  --color-primary: #5ccd16;
+}
+
+@media screen and (min-width: 767px) {
+  :root {
+    --fontSize-h1: 2.5rem;
+    --fontSize-h2: 2rem;
+    --fontSize-h3: 1.3rem;
+    --fontSize-h4: 1.1rem;
+    --fontSize-h5: 1rem;
+    --fontSize-h6: 1rem;
+    --fontSize-body: 0.92rem;
+  }
+}

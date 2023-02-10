@@ -1,0 +1,19 @@
+@use 'src/styles/utils/media-query' as *;
+
+.footer {
+  background-color: var(--color-primary);
+}
+
+.container {
+  padding: 10px 20px;
+
+  @include mediaQuery('pcOnly') {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.title {
+  font-size: 20px;
+  color: #fff;
+}
