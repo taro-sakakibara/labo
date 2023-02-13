@@ -6,7 +6,9 @@ export const Container = () => {
   return (
     <section className={style.wrapper}>
       <Typography.h1 marginBottom>大垣探検マップ</Typography.h1>
-      <div className={style.container}></div>
+      <div className={style.container}>
+        <Typography.p>Pending Now</Typography.p>
+      </div>
     </section>
   );
 };
