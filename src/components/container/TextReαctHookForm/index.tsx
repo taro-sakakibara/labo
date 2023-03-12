@@ -1,11 +1,12 @@
-// import style from './top.module.scss';
 import { Typography } from '@/components/global/Typography';
 import style from './index.module.scss';
 import { useForm, SubmitHandler } from 'react-hook-form';
+import { FormItems } from './components/Form';
 
 interface Inputs {
   name: string;
   tel: number;
+  email: number;
 }
 
 export const Container = () => {
@@ -21,10 +22,10 @@ export const Container = () => {
       <Typography.h1 marginBottom>ReactHookFormを試してみる</Typography.h1>
       <div className={style.container}>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <input defaultValue="test" {...register('name')} />
-          <input defaultValue={'000'} {...register('tel', { required: true })} />
-          {errors.tel && <span>This field is required</span>}
-          <input type="submit" />
+          <FormItems.Input register={register} placeholder="猫山 とら" label="name" errors={errors} />
+          <FormItems.Input register={register} placeholder="222-2222-2222" label="tel" errors={errors} />
+          <FormItems.Input register={register} placeholder="nekoyama@neko.co.jp" label="email" errors={errors} />
+          <FormItems.Button />
         </form>
       </div>
     </section>

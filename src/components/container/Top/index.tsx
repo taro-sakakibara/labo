@@ -19,6 +19,12 @@ export const Container = () => {
           body="webコンポーネントを使って、コンポーネントを作ってみる。どういう感じになるのかな。"
         />
         <Card title="ファビコンを作る" body="頑張ってファビコンを作ってみる。" />
+        <Card title="view transition apiを試してみる" body="" />
+        <Card title="safariのpush通知機能を試してみたい" body="" />
+        <Card title="Renovationを導入する" body="" />
+        <Card title="plopの設定をする" body="" />
+        <Card title="カードにdoneのスタイルを追加する" body="" />
+        <Card title="カードにリンクをつける" body="" />
       </div>
     </section>
   );

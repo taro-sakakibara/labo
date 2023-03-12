@@ -4,8 +4,4 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-
-  @include mediaQuery('pcOnly') {
-    grid-template-columns: 1fr 1fr;
-  }
 }
