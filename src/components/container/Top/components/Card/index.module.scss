@@ -36,3 +36,17 @@
 .link_card:is(:hover, :focus-within) h2 {
   color: rgb(var(--accent));
 }
+
+.done {
+  background-color: #7b7979c9;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.wip {
+  opacity: 0.6;
+}
