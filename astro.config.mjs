@@ -8,6 +8,7 @@ import react from '@astrojs/react';
 export default defineConfig({
   integrations: [react()],
   vite: {
+    server: { port: 3002 },
     plugins: [
       react(),
       checker({
