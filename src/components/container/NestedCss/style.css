@@ -1,0 +1,26 @@
+h2 {
+  font-size: 20px;
+}
+
+.box {
+  background-color: #eee;
+  @media (width >= 768px) {
+    background-color: purple;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: blue;
+  }
+
+  .text {
+    font-size: 14px;
+
+    .text-red {
+      color: red;
+    }
+  }
+}

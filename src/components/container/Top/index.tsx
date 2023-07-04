@@ -10,6 +10,11 @@ export const Container = () => {
       <Typography.h2>やりたいこと</Typography.h2>
       <div className={style.container}>
         <Card
+          title="NestedCssを使えるか試してみる"
+          body="astroが実務で使えるか、テストするのだ。まじめだ。"
+          href="/nested-css/"
+        />
+        <Card
           title="React Hook Formを使えるか試してみる"
           body="astroが実務で使えるか、テストするのだ。まじめだ。"
           href="/test-react-hook-form/"
